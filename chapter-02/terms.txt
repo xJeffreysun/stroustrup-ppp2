@@ -1,0 +1,17 @@
+// : double slash to begin a commment
+<< : output operator
+C++ : programming language
+comment : a note for fellow programmers or self but not for computer
+cout : character output stream
+executable : a program ready by be run on a computer
+function : a named unit of code that can be invoked from different parts of a program
+header : a file containing declarations used to share interfaces between parts of a program
+IDE : integrated development environment
+library : a collection of types, functions, classes, etc. implementing a set of facilities (abstractions) mean to be potentially used as part of more than one program
+linker : the program that combines object code files and libraries into an executable program
+main() : that function the c++ compiler starts at
+object code : output from a compiler intended as input for a linker
+output : values produced by a computation
+program : code that is sufficiently complete to be executed by a computer
+source code : code as produced by a programmer and readable by other programmers
+statement : a basic unit of a program controlling the execution flow in a function, such as if-statement, for statement, expression statement, and declaration
