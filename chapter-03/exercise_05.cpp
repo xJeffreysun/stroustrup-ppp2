@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    int val1;
-    int val2;
+    double val1;
+    double val2;
     cout << "Input 2 values separated by spaces: ";
     cin >> val1 >> val2;
     if (val1 > val2) {

@@ -3,21 +3,9 @@
 using namespace std;
 
 int main() {
-    int val1;
-    int val2;
-    cout << "Input 2 values separated by spaces: ";
-    cin >> val1 >> val2;
-    if (val1 > val2) {
-        cout << "The larger number is: " << val1 << endl;
-        cout << "The smaller number is: " << val2 << endl;
-        cout << "The difference is: " << val1 - val2 << endl;
-    } else {
-        cout << "The larger number is: " << val2 << endl;
-        cout << "The smaller number is: " << val1 << endl;
-        cout << "The difference is: " << val2 - val1 << endl;
-    }
-    cout << "The sum is: " << val1 + val2 << endl;
-    cout << "The product is: " << val1 * val2 << endl;
-    cout << "The ratio is: " << val1 / val2 << endl;
+    double miles;
+    cout << "Please input a distance in miles to convert to kilometers: ";
+    cin >> miles;
+    cout << "Your distance in km is: " << miles * 1.609 << endl;
     return 0;
 }
