@@ -4,26 +4,26 @@ using namespace std;
 
 int main() {
     cout << "Please enter pairs of values or a '|' to exit the program: ";
-    double val1;
-    double val2;
-    while (cin >> val1 && cin >> val2) {
-        if (val1 == '|' || val2 == '|') {
+    double smallest;
+    double largest;
+    double value;
+    if (cin >> value && value != '|') {
+        smallest = value;
+        largest = value;
+        cout << value << endl;
+    }
+    while (cin >> value) {
+        if (value == '|') {
             break;
         }
-        if (val1 > val2) {
-            cout << "The smaller value is: " << val2 << endl;
-            cout << "The larger value is: " << val1 << endl;
-            if (val1 - val2 < 0.01) {
-                cout << "The numbers are almost equal" << endl;
-            }
-        } else if (val2 > val1) {
-            cout << "The smaller value is: " << val1 << endl;
-            cout << "The larger value is: " << val2 << endl;
-            if (val2 - val1 < 0.01) {
-                cout << "The numbers are almost equal" << endl;
-            }
-        } else {
-            cout << "The numbers are equal" << endl;
+        cout << value << endl;
+        if (value < smallest) {
+            smallest = value;
+            cout << "The smallest so far" << endl;
+        }
+        if (value > largest) {
+            largest = value;
+            cout << "The largest so far" << endl;
         }
     }
     return 0;
