@@ -3,9 +3,9 @@
 using namespace std;
 
 int main() {
-    const double m_to_cm = 100.0;
-    const double in_to_cm = 2.54;
-    const double ft_to_cm = 12 * in_to_cm;
+    constexpr double m_to_cm = 100.0;
+    constexpr double in_to_cm = 2.54;
+    constexpr double ft_to_cm = 12 * in_to_cm;
 
     cout << "Please enter a value followed by a unit or a '|' to exit the program: ";
     double smallest;
