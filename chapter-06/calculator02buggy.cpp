@@ -42,6 +42,9 @@ Token get_token()    // read a token from cin
     default:
         error("Bad token");
     }
+    error("Shouldn't get here");
+    Token unused = Token(ch);
+    return unused;
 }
 
 //------------------------------------------------------------------------------
@@ -70,6 +73,8 @@ double primary()     // read and evaluate a Primary
     default:
         error("primary expected");
     }
+    error("Shouldn't get here");
+    return -1.0;
 }
 //------------------------------------------------------------------------------
 
